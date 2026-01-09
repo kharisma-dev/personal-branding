@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyek 3: Landing Page Modern</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
     <!-- <h1 class="text-3xl font-bold underline">Hello Tailwind!</h1>  -->
@@ -43,9 +49,9 @@
             <p class="text-lg md:text-xl text-gray-300 mb-8">
             Mahasiswa yang antusias belajar Web Development, dari HTML hingga React.
             </p>
-            <button class="bg-indigo-500 hover:bg-indigo-700 text white font-bold py-3 px-6 rounded-lg text-lg">
+            <a href="#features" class="bg-indigo-500 hover:bg-indigo-700 text white font-bold py-3 px-6 rounded-lg text-lg">
             Lihat Proyek Saya
-            </button>
+            </a>
         </div>
     </section>
 
@@ -81,6 +87,20 @@
         </div>
     </section>
 
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>2024 MyLogo. All rights reserved.</p>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white">Facebook</a>
+                    <a href="#" class="hover:text-white">Twitter</a>
+                    <a href="#" class="hover:text-white">Linkdln</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script>
         const menuButton = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
